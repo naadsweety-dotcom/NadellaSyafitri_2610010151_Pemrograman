@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-Solution Uniska MAB — Koperasi Digital HMP-TI</title>
+    <meta name="description" content="ITS - menjual berbagai minuman, makanan ringan, dan menyajikan layanan jasa.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="nadee.css">
+</head>
+
+<body>
+
+    <header class="navbar-wrapper" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="brand-logo">
+                <span class="brand-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                        <line x1="6" y1="1" x2="6" y2="4"></line>
+                        <line x1="10" y1="1" x2="10" y2="4"></line>
+                        <line x1="14" y1="1" x2="14" y2="4"></line>
+                    </svg>
+                </span>
+                <span class="brand-name">IT-Solution HMP-TI<span class="dot">.</span></span>
+            </a>
+
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link active">Beranda</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#review" class="nav-link">Ulasan & Rating</a></li>
+                    <li><a href="#lokasi" class="nav-link">Lokasi & Jam</a></li>
+                </ul>
+                <div class="nav-mobile-cta">
+                    <button class="btn btn-primary btn-sm open-cart-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        Keranjang (<span class="cart-count">0</span>)
+                    </button>
+                </div>
+            </nav>
+
+
+            <div class="nav-actions">
+                <button class="cart-pill-btn open-cart-btn" id="openCartBtn" aria-label="Lihat Pesanan">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-badge cart-count" id="navCartBadge">0</span>
+                </button>
+
+                <a href="#menu" class="btn btn-primary hide-on-mobile">Pesan Sekarang</a>
+
+
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu navigasi">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-blobs">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+            <div class="container hero-container">
+
+                <div class="hero-content">
+                    <div class="badge-pill">
+                        <span class="badge-dot"></span>
+                        <span>IT-Solution</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Solusi berbagai kebutuhan, <br>
+                        <span class="text-highlight">Selalu ada dan Selalu Bisa</span>
+                    </h1>
+                    <p class="hero-description">
+                        selamat datang di IT-solution. Koperasi yang berada di Gedung B Lt.1 Kampus Uniska MAB
+                        Banjarmasin, menyajikan seduhan kopi brewasa berbagai
+                        pilihan, snack-sanck, layanan jasa desain garfis, service komputer, menyediakan fasilitas titp
+                        jual barang, serta kebutuhan lainnya
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#menu" class="btn btn-primary btn-lg">
+                            Eksplor Menu
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#lokasi" class="btn btn-outline btn-lg">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Kunjungi Kami
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">4.9★</span>
+                            <span class="stat-label">Rating Kepuasan</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-card">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Menu & Layanan</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-card">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Terpercaya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="visual-wrapper">
+                        <div class="main-image-card">
+                            <img src="menu.jpeg" alt="suasana hangat IT-Solution" class="hero-img">
+                            <img src="hero-image.jpg" alt="IT Solution UNISKA" class="hero-img">
+                            <div class="image-overlay-badge">
+                                <div class="badge-avatar">🌸</div>
+                                <div class="badge-avatar">✨</div>
+                                <div>
+                                    <div class="overlay-title">IT-Solution</div>
+                                    <div class="overlay-title">Menyediakan berbagai jasa</div>
+                                    <div class="overlay-sub">Layanan Cepat & Terpercaya</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="floating-card floating-bottom-card">
+                            <div class="floating-check">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section section-padding" id="menu">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Pilihan Spesial</span>
+                    <h2 class="section-title">Menu Koperasi ITS </h2>
+                </div>
+
+                <div class="filter-tabs-wrapper">
+                    <div class="filter-tabs" id="menuFilters">
+                        <button class="filter-btn active" data-category="all">Semua Menu</button>
+                        <button class="filter-btn" data-category="coffee">Coffee</button>
+                        <button class="filter-btn" data-category="non-coffee">Non-Coffee</button>
+                        <button class="filter-btn" data-category="Snack">Snack</button>
+                        <button class="filter-btn" data-category="Minuman Kemasan">Minuman Kemasan</button>
+                        <button class="filter-btn" data-category="percetakan">Percetakan & Dokumen</button>
+                        <button class="filter-btn" data-category="kreatif">Jasa Kreatif</button>
+                    </div>
+                </div>
+
+                <div class="menu-grid" id="menuGrid">
+
+                </div>
+
+                <div class="menu-footer-callout">
+                    <div class="callout-content">
+                        <h3>Bingung mau konsultasi project IT anda dimana?</h3>
+                        <p>IT-Solution jawabannya. Kami menyediakan layanan jasa desain, foto/videografi, service
+                            haedware, Instalasi Software,
+                            jasa rakit komputer, menyediakan fasilitas titip jual barang dan lainnya</p>
+                    </div>
+                    <a href="https://wa.me/6285175044971?text=Halo%20ITS%20HMP-TI,%20saya%20ingin%20tanya%20tentang%20pemesanan"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        Konsultasi via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="review-section section-padding" id="review">
+            <div class="container">
+                <div class="review-header-wrapper">
+                    <div class="review-header-left">
+                        <span class="section-tag">Suara Pelanggan</span>
+                        <h2 class="section-title">Ulasan & Rating IT-Solution</h2>
+                        <p class="section-subtitle">Kesan tulus dari para sahabat IT-Solution yang telah menikmati
+                            layanan kami.</p>
+                    </div>
+                    <div class="review-header-right">
+                        <button class="btn btn-primary" id="openReviewModalBtn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 20h9"></path>
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                            </svg>
+                            Tulis Ulasan Anda
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="rating-overview-card">
+                    <div class="rating-score-box">
+                        <span class="big-score" id="avgRatingScore">4.9</span>
+                        <div class="star-row" id="avgStarsRow">
+                            ★★★★★
+                        </div>
+                        <span class="total-reviews-count" id="totalReviewsText">Berdasarkan 200 ulasan pelanggan</span>
+                    </div>
+
+                    <div class="rating-breakdown">
+                        <div class="breakdown-row">
+                            <span class="star-label">5 Bintang</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 92%;"></div>
+                            </div>
+                            <span class="count-label">92%</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span class="star-label">4 Bintang</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 7%;"></div>
+                            </div>
+                            <span class="count-label">7%</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span class="star-label">3 Bintang</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 1%;"></div>
+                            </div>
+                            <span class="count-label">1%</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span class="star-label">2 Bintang</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%;"></div>
+                            </div>
+                            <span class="count-label">0%</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span class="star-label">1 Bintang</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%;"></div>
+                            </div>
+                            <span class="count-label">0%</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="reviews-grid" id="reviewsGrid">
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="location-section section-padding" id="lokasi">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Temukan Kami</span>
+                    <h2 class="section-title">Lokasi & Jam Operasional</h2>
+                    <p class="section-subtitle">Kunjungi gerai kami untuk pengalaman ai yang tenang, hangat, dan nyaman
+                    </p>
+                </div>
+
+                <div class="location-layout">
+
+                    <div class="location-info-card">
+                        <div class="info-block">
+                            <div class="info-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="info-details">
+                                <h4>Alamat Lokasi</h4>
+                                <p id="cafeAddressText">Kampus UNISKA Banjarmasin, Jl. Adhyaksa No. 2, Sungai Miai, Kec.
+                                    Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan 70123</p>
+                                <button class="copy-address-btn" id="copyAddressBtn">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    <span>Salin Alamat</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="info-details">
+                                <h4>Jam Operasional</h4>
+                                <ul class="schedule-list">
+                                    <li>
+                                        <span class="day">Senin – Sabtu</span>
+                                        <span class="time">08.00 – 20.00 WITA</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="info-details">
+                                <h4>Reservasi & Kontak</h4>
+                                <p>WhatsApp: +62 812-3456-7890<br>Instagram: @its_hmpti</p>
+                                <h4>Kontak & Informasi</h4>
+                                <p>Instagram: @its_hmpti<br>Google Maps: UNISKA Banjarmasin</p>
+                            </div>
+                        </div>
+
+
+                        <div class="facilities-wrap">
+                            <span class="facility-pill">⚡ Free Wi-Fi Cepat</span>
+                            <span class="facility-pill">🚗 Parkir Nyaman dan Luas</span>
+                            <span class="facility-pill">🕌 Musholla Kampus</span>
+                        </div>
+                    </div>
+
+
+                    <div class="location-map-card">
+                        <div class="map-container">
+                            <iframe title="Peta Lokasi IT-Solution x Brewasa"
+                                src="https://maps.app.goo.gl/5j74N7n1vMCCce8T6?g_st=ic"
+                                title="Peta Lokasi UNISKA Banjarmasin"
+                                src="https://maps.google.com/maps?q=UNISKA+Banjarmasin,+Jl.+Adyaksa,+Sungai+Miai,+Kec.+Banjarmasin+Utara,+Kota+Banjarmasin,+Kalimantan+Selatan+70123&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="map-footer-cta">
+                            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary btn-block">
+                                <a href="https://maps.app.goo.gl/5j74N7n1vMCCce8T6?g_st=ic" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-primary btn-block">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                                    </svg>
+                                    Buka di Google Maps
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer-section">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="#hero" class="brand-logo footer-logo">
+                    <span class="brand-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                        </svg>
+                    </span>
+                    <span class="brand-name">IT-Solution x Brewasa<span class="dot">.</span></span>
+                </a>
+                <p class="footer-desc">
+                    Kopi Brewasa yang dirancang untuk menghadirkan ketenangan, dan cita rasa autentik
+                    yang tak terlupakan.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-btn" aria-label="Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="TikTok">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="WhatsApp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4 class="footer-heading">Navigasi Cepat</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero">Beranda</a></li>
+                    <li><a href="#menu">Daftar Menu</a></li>
+                    <li><a href="#review">Rating & Ulasan</a></li>
+                    <li><a href="#lokasi">Lokasi & Denah</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4 class="footer-heading">Kategori Menu</h4>
+                <ul class="footer-links">
+                    <li><a href="#menu" data-filter="coffe">Coffe</a></li>
+                    <li><a href="#menu" data-filter="non-coffe">Non-Coffe</a></li>
+                    <li><a href="#menu" data-filter="Snack">Snack</a></li>
+                    <li><a href="#menu" data-filter="Minuman Kemasan">Minuman Kemasan</a></li>
+                    <li><a href="#menu" data-filter="percetakan">Percetakan & Dokumem</a></li>
+                    <li><a href="#menu" data-filter="kreatif">Jasa Kreatif</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h4 class="footer-heading">Dapatkan Promo Eksklusif</h4>
+                <p class="newsletter-sub">Daftarkan email Anda untuk kupon diskon 15% pada kunjungan pertama!</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Masukkan alamat email..." required class="newsletter-input"
+                        id="newsletterEmail">
+                    <button type="submit" class="btn btn-primary btn-newsletter">Gabung</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; 2026 IT-Solution Uniska MAB</p>
+                <p class="crafted-text">Dibuat oleh Nadella Syafitri(27).</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal-overlay" id="cartModalOverlay">
+        <div class="cart-drawer" id="cartDrawer">
+            <div class="drawer-header">
+                <div class="drawer-title-wrap">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <h3>Pesanan Anda</h3>
+                </div>
+                <button class="close-modal-btn" id="closeCartBtn" aria-label="Tutup Keranjang">&times;</button>
+            </div>
+
+            <div class="drawer-body" id="cartItemsContainer">
+
+            </div>
+
+            <div class="drawer-footer" id="cartFooter">
+                <div class="cart-summary-row">
+                    <span>Total Pembayaran:</span>
+                    <span class="cart-total-price" id="cartTotalPrice">Rp 0</span>
+                </div>
+                <button class="btn btn-primary btn-block btn-lg" id="checkoutWhatsappBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                        </path>
+                    </svg>
+                    Kirim Pesanan via WhatsApp
+                </button>
+                <p class="cart-note">*Pesanan akan diteruskan langsung ke WhatsApp barista IT-Solution</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal-overlay" id="reviewModalOverlay">
+        <div class="review-modal">
+            <div class="drawer-header">
+                <h3>Beri Ulasan untuk IT-Solution</h3>
+                <button class="close-modal-btn" id="closeReviewModalBtn" aria-label="Tutup">&times;</button>
+            </div>
+            <form class="review-form" id="reviewForm">
+                <div class="form-group">
+                    <label>Berapa Bintang Pengalaman Anda?</label>
+                    <div class="star-rating-input" id="starRatingInput">
+                        <span class="star-select" data-rating="1">★</span>
+                        <span class="star-select" data-rating="2">★</span>
+                        <span class="star-select" data-rating="3">★</span>
+                        <span class="star-select" data-rating="4">★</span>
+                        <span class="star-select active" data-rating="5">★</span>
+                    </div>
+                    <input type="hidden" id="selectedRatingValue" value="5">
+                </div>
+
+                <div class="form-group">
+                    <label for="reviewAuthor">Nama Anda</label>
+                    <input type="text" id="reviewAuthor" class="form-input" placeholder="Contoh: Jessica Almira"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reviewRole">Status Pengunjung (Opsional)</label>
+                    <input type="text" id="reviewRole" class="form-input"
+                        placeholder="Contoh: Coffee Lover / WFC Enthusiast">
+                </div>
+
+                <div class="form-group">
+                    <label for="reviewComment">Ceritakan Pengalaman Anda</label>
+                    <textarea id="reviewComment" class="form-input" rows="4"
+                        placeholder="Bagaimana rasa minuman, dan layanan kami?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg">Kirim Ulasan</button>
+            </form>
+        </div>
+    </div>
+
+
+    <button class="back-to-top" id="backToTopBtn" aria-label="Kembali ke atas">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
